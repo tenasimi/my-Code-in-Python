@@ -1,0 +1,5 @@
+import pyautogui
+screenshot = pyautogui.screenshot()
+screenshot.save("/home/user/screen.png")
+
+#"scrot" must be installed to use screenshot functions in Linux. Run: sudo apt-get install scrot'
