@@ -1,0 +1,15 @@
+from pytube import YouTube
+
+youtube_url = input("Please enter youtube link ")
+yt = YouTube(youtube_url)
+
+print(yt.title)
+print(yt.streams.all)
+stream = yt.streams.first()
+print(stream)
+#stream.download()
+stream.download('/home/trinx/Downloads/useful')
+
+
+
+#download youtube videos, opts to select appropriate quality stream 
