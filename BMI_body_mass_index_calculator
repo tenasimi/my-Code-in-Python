@@ -1,0 +1,33 @@
+#body mass index calc
+
+user = input("Please enter your name: ")
+m = input("Please enter your height: ")
+kg = input("Please enter your weight: ")
+
+
+
+name = user
+height  = int(m)/100
+weight = int(kg)
+
+
+def bmi_calculator(name,height,weight):
+    bmi = weight/height**2
+    print("bmi: ")
+    print(bmi)
+    if bmi < 25:
+        return name + " is not overweight"
+    else:
+        return name + " is overweight"
+
+result = bmi_calculator(name,height,weight)
+
+print(result)
+
+
+
+#BMI Categories:
+#Underweight = < 18.5
+#Normal weight = 18.5 – 24.9
+#Overweight = 25 – 29.9
+#Obesity = BMI of 30 or greater 
