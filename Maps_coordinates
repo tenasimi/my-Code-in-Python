@@ -1,0 +1,14 @@
+import folium as fo
+map = fo.Map()
+map
+x=fo.FeatureGroup(name='my Map')
+x.add_child(fo.Marker(location=[27.1750,78.0422],popup='Taj Mahal',icon=fo.Icon(color='green')))
+map.add_child(x)
+x.add_child(fo.Marker(location=[41.047867,28.898272],popup='Istanbul',icon=fo.Icon(color='blue')))
+map.add_child(x)
+x.add_child(fo.Marker(location=[29.591768,52.583698],popup='Shiraz',icon=fo.Icon(color='red')))
+map.add_child(x)
+x.add_child(fo.Marker(location=[40.416775,-3.703790],popup='Madrid',icon=fo.Icon(color='beige')))
+map.add_child(x)
+
+#using folium library for mapping Latitude and longitude coordinates
